@@ -1,14 +1,18 @@
 Class {
 	#name : #Product,
 	#superclass : #Object,
+	#instVars : [
+		'category'
+	],
 	#category : #'TDDExample-Tests'
 }
 
 { #category : #accessing }
 Product >> getCategory [
-	^ nil
+	^ category
 ]
 
 { #category : #accessing }
 Product >> setCategory: aCategory [
+	category := aCategory
 ]
