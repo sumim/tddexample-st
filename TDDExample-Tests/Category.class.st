@@ -1,10 +1,18 @@
 Class {
 	#name : #Category,
 	#superclass : #Object,
+	#instVars : [
+		'products'
+	],
 	#category : #'TDDExample-Tests'
 }
 
 { #category : #testing }
 Category >> contains: aProduct [ 
-	^ true
+	^ products includes: aProduct
+]
+
+{ #category : #initialization }
+Category >> initialize [
+	products := OrderedCollection new
 ]
