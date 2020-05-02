@@ -14,5 +14,6 @@ Product >> getCategory [
 
 { #category : #accessing }
 Product >> setCategory: aCategory [
-	category := aCategory
+	category := aCategory.
+	aCategory addProduct: self
 ]
