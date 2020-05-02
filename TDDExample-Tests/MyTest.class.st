@@ -12,3 +12,12 @@ MyTest >> test1 [
 	pc setCategory: electronic.
 	self assert: electronic equals: pc getCategory
 ]
+
+{ #category : #tests }
+MyTest >> test2 [
+	| pc electronic |
+	pc := Product new.
+	electronic := Category new.
+	pc setCategory: electronic.
+	self assert: (electronic contains: pc)
+]
